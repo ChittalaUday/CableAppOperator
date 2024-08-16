@@ -1,0 +1,123 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:id="@+id/payment_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <!-- Name and Address Section -->
+        <LinearLayout
+            android:id="@+id/item_payment_name_address_layout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/item_payment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textAppearance="?attr/textAppearanceBody1" />
+
+            <TextView
+                android:id="@+id/item_payment_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Payment Status Section -->
+        <LinearLayout
+            android:id="@+id/item_payment_amount_layout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+        >
+
+            <TextView
+                android:id="@+id/item_payment_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid:"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:textAppearance="?attr/textAppearanceBody1" />
+
+            <TextView
+                android:id="@+id/item_paidAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textSize="18sp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Timestamp Section -->
+        <TextView
+            android:id="@+id/item_payment_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/item_payment_amount_layout"
+            android:layout_marginTop="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/payment_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_payment_timestamp"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                android:id="@+id/item_package_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/item_payment_newDue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Due"
+                android:layout_below="@id/item_package_amount"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/item_payment_paidTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid To"
+                android:layout_below="@id/item_payment_newDue"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

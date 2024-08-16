@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent"
+    tools:context=".DueActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/due_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Due Details"
+        app:titleTextColor="@color/text_color"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/due_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/due_grid_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/card"
+                >
+
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:columnCount="2"
+                    android:padding="8dp"
+                    >
+
+                    <!-- Name -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:text="Name: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+
+                    <!-- Serial No -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:text="Serial No: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/serial_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+
+                    <!-- Box Type -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:text="Box Type: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/box_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+
+                    <!-- Created On -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:text="Created on: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/created_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textIsSelectable="true" />
+
+                    <!-- Customer ID -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:text="Customer ID: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/c_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textIsSelectable="true" />
+
+                    <!-- Flat No -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:text="Flat No: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/flat_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+
+                    <!-- D No -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:text="D No: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/d_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+
+                    <!-- Mobile No -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="0"
+                        android:text="Mobile No: "
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="1"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="0"
+                        android:text="Total Due: "
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/old_due"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="1"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:text="--"
+                        android:textColor="@color/text_color"
+                        android:textIsSelectable="true" />
+                </GridLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:hint="Enter Due Amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/due_grid_card">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/due_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxEms="1"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/due_remark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Remarks (optional)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amount_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/due_remark_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:text="Save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/due_remark_layout" />
+
+
+            <TextView
+                android:id="@+id/due_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:text="History"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/save_button" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/due_history_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/due_history"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

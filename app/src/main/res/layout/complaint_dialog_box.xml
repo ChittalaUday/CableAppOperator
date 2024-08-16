@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialog_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter complaint details" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/complaint_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/quick_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Complaint"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/collect_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collect Bill" />
+    </RadioGroup>
+
+    <!-- Additional fields for Collect Bill -->
+    <TextView
+        android:id="@+id/payments_dialog_radio_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Default Amount"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        />
+
+    <RadioGroup
+        android:id="@+id/complaint_dialog_amounts_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/complaint_dialog_amount_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹250" />
+
+        <RadioButton
+            android:id="@+id/complaint_dialog_amount_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹350" />
+
+        <RadioButton
+            android:id="@+id/complaint_dialog_amount_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹450" />
+
+        <!-- Custom amount option -->
+        <RadioButton
+            android:id="@+id/complaint_dialog_amount_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom" />
+
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/complaint_dialog_custom_amount_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter custom amount"
+        app:startIconDrawable="@drawable/ic_currency_rupee"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/complaint_dialog_custom_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            style="@style/Widget.Material3.Button.TextButton"
+            />
+
+
+        <Button
+            android:id="@+id/dialog_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_toStartOf="@id/dialog_button"
+            style="@style/Widget.Material3.Button.TextButton"
+            />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

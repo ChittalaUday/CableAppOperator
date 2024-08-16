@@ -1,0 +1,88 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="4dp"
+    >
+    <RelativeLayout
+        android:padding="16dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_payment_amount_layout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+
+            >
+            <TextView
+                android:id="@+id/item_payment_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid:"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/item_paidAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textSize="18sp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_payment_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="10sp"
+            android:text="Timestamp" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/item_package_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Package"
+            android:layout_alignParentTop="true"
+            />
+
+
+        <TextView
+            android:id="@+id/item_payment_newDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining Due"
+            android:layout_marginTop="6dp"
+
+            android:textSize="14sp"
+            android:layout_below="@id/item_package_amount"
+
+            />
+
+
+        <TextView
+            android:id="@+id/item_payment_paidTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid To"
+            android:layout_below="@id/item_payment_newDue"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

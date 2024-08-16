@@ -1,0 +1,112 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/card"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <!-- Complaint Details Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/complaintItemStatus"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/complaintItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Name: "
+                    android:textAppearance="?attr/textAppearanceBody1" />
+
+                <TextView
+                    android:id="@+id/complaintItemMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Mobile: 123-456-7890"
+                    android:textAppearance="?attr/textAppearanceBody1" />
+
+                <TextView
+                    android:id="@+id/complaintItemAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Address: "
+                    android:textAppearance="?attr/textAppearanceBody1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/complaintItemStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentEnd="true"
+                />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/complaintItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: The complaint details go here."
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="4dp"
+            />
+
+
+        <TextView
+            android:id="@+id/complaintItemRemarks2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remarks"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="4dp"
+
+            />
+
+        <TextView
+            android:id="@+id/complaintItemSolvedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SolvedBy"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/complaintItemTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp: 2023-05-28 12:34 PM"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

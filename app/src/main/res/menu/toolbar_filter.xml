@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter"
+        app:showAsAction="always">
+    <menu>
+        <item
+            android:id="@+id/filter_active"
+            android:title="Active" />
+        <item
+            android:id="@+id/filter_deactive"
+            android:title="Deactive" />
+        <item
+            android:id="@+id/filter_expired"
+            android:title="Expired" />
+    </menu>
+</item>
+</menu>

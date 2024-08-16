@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="20dp"
+    app:circularflow_radiusInDP="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/payment_dialog_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/payment_old_due"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Medium" />
+
+    <!-- Default amounts selection -->
+    <TextView
+        android:id="@+id/payments_dialog_radio_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Default Amount"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/default_amounts_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/amount_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹250" />
+
+        <RadioButton
+            android:id="@+id/amount_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹350" />
+
+        <RadioButton
+            android:id="@+id/amount_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹450" />
+
+        <!-- Custom amount option -->
+        <RadioButton
+            android:id="@+id/amount_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom" />
+
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/custom_amount_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter custom amount"
+        app:startIconDrawable="@drawable/ic_currency_rupee"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/custom_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/payments_dialog_status_radio_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : "
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp" />
+
+
+    <RadioGroup
+        android:id="@+id/payment_status_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_activate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid" />
+
+        <RadioButton
+            android:id="@+id/radio_set_due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due" />
+
+
+    </RadioGroup>
+
+    <!-- Amount Paid display -->
+    <TextView
+        android:id="@+id/payments_amount_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount : "
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/payment_amount_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        app:startIconDrawable="@drawable/ic_currency_rupee"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/payment_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/payment_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/payment_dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.Material3.Button.TextButton.Dialog"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/payment_dialog_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_toStartOf="@id/payment_dialog_button"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.Material3.Button.TextButton.Dialog" />
+    </RelativeLayout>
+</LinearLayout>

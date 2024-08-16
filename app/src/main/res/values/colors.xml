@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#FF000000</color>
+    <color name="card">@color/cardview_light_background</color>
+
+
+
+    <color name="md_theme_light_primary">#6750A4</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#EADDFF</color>
+    <color name="md_theme_light_onPrimaryContainer">#21005D</color>
+    <color name="md_theme_light_secondary">#625B71</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#E8DEF8</color>
+    <color name="md_theme_light_onSecondaryContainer">#1D192B</color>
+
+    <color name="md_theme_dark_primary">#D0BCFF</color>
+    <color name="md_theme_dark_onPrimary">#371E73</color>
+    <color name="md_theme_dark_primaryContainer">#4F378B</color>
+    <color name="md_theme_dark_onPrimaryContainer">#EADDFF</color>
+    <color name="md_theme_dark_secondary">#CCC2DC</color>
+    <color name="md_theme_dark_onSecondary">#332D41</color>
+    <color name="md_theme_dark_secondaryContainer">#4A4458</color>
+    <color name="md_theme_dark_onSecondaryContainer">#E8DEF8</color>
+
+    <color name="colorPrimary">#024265</color>
+    <color name="colorPrimaryDark">#024265</color>
+    <color name="colorAccent">#05af9b</color>
+
+    <color name="color_one">#fb7268</color>
+    <color name="color_white">#ededf2</color>
+    <color name="color_two">#E3E0E0</color>
+
+    <color name="R">#FFA726</color>
+    <color name="Python">#4CAF50</color>
+    <color name="CPP">#EF5350</color>
+    <color name="Java">#29B6F6</color>
+
+        <!-- Light Theme Colors -->
+        <color name="date_header_bg">#CCCCCC</color>
+        <color name="date_header_text">#000000</color>
+        <color name="section_header_bg">#DDDDDD</color>
+        <color name="section_header_text">#000000</color>
+
+        <color name="status_pending">#FFC107</color> <!-- Amber 500 -->
+        <color name="status_in_progress">#03A9F4</color> <!-- Light Blue 500 -->
+        <color name="status_resolved">#4CAF50</color> <!-- Green 500 -->
+        <color name="status_closed">#F44336</color> <!-- Red 500 -->
+
+        <color name="button_pressed_color">#FF4081</color>
+        <color name="button_default_color">#3F51B5</color>
+
+        <color name="status_active">#4CAF50</color> <!-- Green -->
+        <color name="status_deactive">#FF0000</color> <!-- Red -->
+        <color name="status_expire">#FFA500</color> <!-- Orange -->
+        <color name="status_due">#EAEA12</color> <!-- Yellow -->
+        <color name="status_terminate">#000000</color>
+
+        <color name="all_selected">#3F51B5</color>
+        <color name="all_default">#3F51B5</color>
+        <color name="pending_selected">#FFA500</color>
+        <color name="pending_default">#FFA500</color>
+        <color name="solved_selected">#4CAF50</color>
+        <color name="solved_default">#4CAF50</color>
+        <color name="in_review_selected">#FF5733</color>
+        <color name="in_review_default">#FF5733</color>
+
+        <color name="semi_transparent_red">#80FF0000</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="red">#FF0000</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="purple">#800080</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="brown">#795548</color>
+    <color name="blue_grey">#607D8B</color>
+    <color name="blue">#407BFF</color>
+    <color name="bg_color">#efe5fd</color>
+    <color name="orange">#E91E63</color>
+    <color name="light_green">#7CB342</color>
+    <color name="grey">#424242</color>
+
+    <color name="light_green_50">#F1F8E9</color>
+
+    <color name="orange_50">#FFEBEE</color>
+
+    <color name="blue_50">#ECF5FC</color>
+    <color name="blue_100">#BBDEFB</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_600">#1E88E5</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_800">#1565C0</color>
+    <color name="blue_900">#0D47A1</color>
+    <color name="blue_A100">#82B1FF</color>
+    <color name="blue_A400">#448AFF</color>
+    <color name="blue_A700">#2979FF</color>
+
+
+
+
+    <color name="custom_edittext_background_color">#E0E0E0</color>
+    <color name="custom_edittext_background_color_focused">#C5CAE9</color>
+    <color name="custom_edittext_hint_color">#757575</color>
+    <color name="custom_edittext_text_color">#000000</color>
+
+
+
+</resources>

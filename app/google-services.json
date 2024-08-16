@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "720131579209",
+    "firebase_url": "https://cablecomplaintapplication-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cablecomplaintapplication",
+    "storage_bucket": "cablecomplaintapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720131579209:android:3b09cde6d6a8ec4d464e98",
+        "android_client_info": {
+          "package_name": "com.example.cableapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720131579209-qqnrl9n1kkncqfemeh66av2l7mfhp9es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzUwbia54-I704t3CdC8Q9z2L5pgsJ63k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720131579209-qqnrl9n1kkncqfemeh66av2l7mfhp9es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720131579209:android:803d5afda9824d88464e98",
+        "android_client_info": {
+          "package_name": "com.example.cablecomplaintapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720131579209-qqnrl9n1kkncqfemeh66av2l7mfhp9es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzUwbia54-I704t3CdC8Q9z2L5pgsJ63k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720131579209-qqnrl9n1kkncqfemeh66av2l7mfhp9es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720131579209:android:d4071ddc9ef95d20464e98",
+        "android_client_info": {
+          "package_name": "com.example.cablecustomersupport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720131579209-qqnrl9n1kkncqfemeh66av2l7mfhp9es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzUwbia54-I704t3CdC8Q9z2L5pgsJ63k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720131579209-qqnrl9n1kkncqfemeh66av2l7mfhp9es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
